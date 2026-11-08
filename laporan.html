@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Penjualan - BOOKSTORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page">
+  <header class="dashboard-header"><a class="brand" href="dashboard.html">BOOKSTORE</a><a class="btn-secondary" href="dashboard.html">Kembali ke Dashboard</a></header>
+  <main class="page-container">
+    <section class="page-heading"><h1>Laporan Penjualan</h1><p>Ringkasan transaksi dan buku yang terjual.</p></section>
+    <section class="summary-grid">
+      <article class="summary-card"><span>Total Transaksi</span><strong id="jumlahTransaksi">0</strong></article>
+      <article class="summary-card"><span>Total Buku Terjual</span><strong id="jumlahBukuTerjual">0</strong></article>
+      <article class="summary-card"><span>Total Pendapatan</span><strong id="totalPendapatan">Rp 0</strong></article>
+    </section>
+    <section class="panel"><h2>Ringkasan Penjualan per Buku</h2><div class="table-wrap"><table><thead><tr><th>No</th><th>Nama Buku</th><th>Jumlah Terjual</th><th>Nilai Penjualan</th></tr></thead><tbody id="tabelLaporanBuku"></tbody></table></div></section>
+  </main>
+  <script src="js/laporan.js"></script>
+</body>
+</html>

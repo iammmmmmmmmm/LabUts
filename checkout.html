@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Buku - BOOKSTORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page">
+  <header class="dashboard-header"><a class="brand" href="dashboard.html">BOOKSTORE</a><a class="btn-secondary" href="dashboard.html">Kembali ke Dashboard</a></header>
+  <main class="page-container">
+    <section class="page-heading"><h1>Pemesanan Buku</h1><p>Lengkapi informasi pelanggan dan pilih buku yang ingin dipesan.</p></section>
+    <section class="panel">
+      <h2>Informasi Pelanggan</h2>
+      <form id="formCheckout" class="form-grid">
+        <div><label for="namaPelanggan">Nama Pelanggan</label><input id="namaPelanggan" required placeholder="Nama pelanggan"></div>
+        <div><label for="pilihBuku">Pilih Buku</label><select id="pilihBuku" required><option value="">-- Pilih Buku --</option></select></div>
+        <div><label for="jumlahBuku">Jumlah Buku</label><input id="jumlahBuku" type="number" min="1" value="1" required></div>
+        <div><label for="metodePembayaran">Metode Pembayaran</label><select id="metodePembayaran" required><option value="">-- Pilih Pembayaran --</option><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select></div>
+        <div class="form-actions"><button class="btn-primary" type="submit">Tambahkan ke Keranjang</button></div>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Keranjang Belanja</h2>
+      <div class="table-wrap"><table><thead><tr><th>No</th><th>Nama Buku</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead><tbody id="tabelKeranjang"></tbody></table></div>
+      <div class="checkout-footer"><h3 id="totalHarga">Total: Rp 0</h3><button type="button" class="btn-primary" id="btnCheckout">Buat Pesanan</button></div>
+    </section>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

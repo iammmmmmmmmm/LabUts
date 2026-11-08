@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Stok - BOOKSTORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page">
+  <header class="dashboard-header"><a class="brand" href="dashboard.html">BOOKSTORE</a><a class="btn-secondary" href="dashboard.html">Kembali ke Dashboard</a></header>
+  <main class="page-container">
+    <section class="page-heading"><h1>Informasi Stok Buku</h1><p>Tambah, ubah, dan hapus data katalog buku.</p></section>
+    <section class="panel">
+      <h2>Form Buku</h2>
+      <form id="formBuku" class="form-grid">
+        <input type="hidden" id="idBuku">
+        <div><label for="judul">Judul Buku</label><input id="judul" required placeholder="Judul buku"></div>
+        <div><label for="penulis">Penulis</label><input id="penulis" required placeholder="Nama penulis"></div>
+        <div><label for="harga">Harga (Rp)</label><input id="harga" type="number" min="1" required></div>
+        <div><label for="stok">Stok</label><input id="stok" type="number" min="0" required></div>
+        <div class="form-actions"><button class="btn-primary" type="submit" id="tombolSimpan">Tambah Buku</button><button class="btn-secondary" type="button" id="tombolBatal" hidden>Batal Edit</button></div>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Daftar Buku</h2>
+      <div class="table-wrap"><table><thead><tr><th>No</th><th>Judul</th><th>Penulis</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead><tbody id="tabelBuku"></tbody></table></div>
+    </section>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/stock.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - BOOKSTORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <a class="brand" href="dashboard.html">BOOKSTORE</a>
+    <button class="btn-logout" type="button" onclick="logout()">Logout</button>
+  </header>
+  <main class="dashboard-container">
+    <section class="welcome-section">
+      <h1 id="greeting">Selamat Datang!</h1>
+      <p id="namaPengguna">Selamat datang di sistem BOOKSTORE.</p>
+      <p class="welcome-description">Kelola toko buku online dengan mudah melalui dashboard ini.</p>
+    </section>
+    <section class="menu-section">
+      <h2>Menu Utama</h2>
+      <div class="menu-grid">
+        <a href="stock.html" class="menu-card"><span class="menu-icon">📚</span><h3>Informasi Stok</h3><p>Melihat dan mengelola katalog buku.</p></a>
+        <a href="checkout.html" class="menu-card"><span class="menu-icon">🛒</span><h3>Pemesanan Buku</h3><p>Melakukan pemesanan buku online.</p></a>
+        <a href="tracking.html" class="menu-card"><span class="menu-icon">🚚</span><h3>Tracking Pengiriman</h3><p>Memantau status pesanan.</p></a>
+        <a href="laporan.html" class="menu-card"><span class="menu-icon">📊</span><h3>Laporan Penjualan</h3><p>Melihat ringkasan penjualan buku.</p></a>
+        <a href="transaksi.html" class="menu-card"><span class="menu-icon">🧾</span><h3>History Transaksi</h3><p>Melihat riwayat transaksi pelanggan.</p></a>
+      </div>
+    </section>
+  </main>
+  <footer class="dashboard-footer"><p>&copy; 2026 BOOKSTORE. Sistem Pemesanan Buku Online.</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

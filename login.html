@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BOOKSTORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <h1>BOOKSTORE</h1>
+    <p class="muted">Sistem Pemesanan Buku Online</p>
+    <form id="formLogin">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Masukkan email" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Masukkan password" required>
+      <button class="btn-primary full-width" type="submit">Login</button>
+      <p id="pesanLogin" class="message" aria-live="polite"></p>
+    </form>
+    <p class="hint">Akun demo: admin@gmail.com / admin123</p>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
